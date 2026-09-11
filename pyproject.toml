@@ -1,0 +1,22 @@
+[project]
+name = "sparkcityx"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "pknight", email = "paul.knight@delmarvacomputer.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "fastparquet>=2026.5.0",
+    "pandas>=3.0.5",
+    "pyarrow>=25.0.1",
+    "spark>=0.4.1",
+]
+
+[project.scripts]
+sparkcityx = "sparkcityx:main"
+
+[build-system]
+requires = ["uv_build>=0.12.2,<0.13.0"]
+build-backend = "uv_build"
